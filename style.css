@@ -1,0 +1,322 @@
+@font-face {
+    font-family: "AudiType";
+    src: url("./Assets/AudiTypeVF_Lat.woff2");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.NavDiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.Imgdiv img {
+    width: 70px;
+
+}
+
+.Imgdiv img:hover {
+    cursor: pointer;
+}
+
+.Navlist ul {
+    display: flex;
+    list-style-type: none;
+    padding: 12px;
+    gap: 0 30px;
+    color: gray;
+
+}
+
+.Navlist li:hover {
+    cursor: pointer;
+    color: black;
+    transform: translateY(-10px);
+    transition: all .8s;
+}
+
+.NavLeft {
+    display: flex;
+    gap: 20px;
+}
+
+.Navlist li {
+    font-family: "AudiType";
+    font-size: 16pt;
+}
+
+.NavRight {
+    padding: 20px 10px 0 0;
+
+}
+
+.MainImage img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.NavRight i {
+    font-size: 16pt;
+}
+
+.NavRight i:hover {
+    cursor: pointer;
+}
+
+.ContentDiv {
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.ContentDiv h2 {
+    font-family: "AudiType";
+    font-size: 26pt;
+    font-weight: 400;
+}
+
+.ContentDiv p {
+    font-family: "AudiType";
+    font-size: 18pt;
+    font-weight: 400;
+}
+
+.ContentDiv button {
+    font-family: "AudiType";
+    font-size: 10pt;
+    font-weight: 400;
+    padding: 8px;
+}
+
+.ContentDiv button:hover {
+    cursor: pointer;
+}
+
+.HeroSection {
+    min-height: 800px;
+}
+
+.CardsHeading h2 {
+    text-align: center;
+    font-family: "AudiType";
+    font-weight: 400;
+    font-size: 26pt;
+
+}
+
+.ContCards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.CardImg img {
+    height: 280px;
+    width: 420px;
+
+}
+
+.cardHeading h3 {
+    font-family: "AudiType", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+.cardPara p {
+    color: rgb(74, 74, 74);
+    font-size: 16px;
+}
+
+.cardLink a {
+    color: black;
+    text-decoration: underline;
+}
+
+.cardLink:hover {
+    cursor: pointer;
+}
+
+.cardLink:hover .fa-greater-than {
+    transform: translateX(10px);
+    transition: all .5s;
+}
+
+.CardsMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.CardDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cardLink {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.CardSection {
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.InfoSection {
+    display: flex;
+    gap: 30px;
+    padding: 80px 60px;
+}
+
+.LeftContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 50px;
+}
+
+.LeftContent h3 {
+    font-size: 32px;
+    font-family: "AudiType", sans-serif;
+    font-weight: lighter;
+}
+
+
+.LeftContent p {
+    font-family: "AudiType", sans-serif;
+    text-align: justify;
+}
+
+.btnDiv button,
+.contentBtn {
+    background-color: white;
+    color: black;
+    padding: 14px 30px;
+    font-size: 22px;
+    width: fit-content;
+}
+
+.btnDiv button:hover,
+.contentBtn:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: all .8s;
+}
+.contentBtn2 {
+    background-color: black;
+    color: white;
+    padding: 14px 80px;
+    font-size: 14px;
+    width: fit-content;
+}
+.contentBtn2:hover {
+  cursor: pointer;
+}
+.Content2Div {
+    display: flex;
+    justify-content: center;
+}
+.Footer{
+    padding: 80px 60px;
+    margin-top: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.anchorDiv a {
+    padding-right: 10px;
+}
+
+.anchorDiv:hover .fa-angle-up {
+    transform: translateY(-4px);
+}
+
+.anchorDiv a {
+    color: white;
+}
+.BackTopDiv {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.BackTopDiv:hover {
+    cursor: pointer;
+}
+
+.listItemDiv {
+    display: flex;
+    gap: 150px;
+    padding-left: 100px;
+}
+
+.listItemDiv h3 {
+    font-size: 22px;
+}
+
+.listItemDiv div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.listItemDiv ul,
+.leftSection ul {
+    list-style-type: none;
+}
+
+.listItemDiv li {
+    padding: 16px 0;
+}
+.listItemDiv li:hover{
+cursor: pointer;
+}
+
+.copyrightSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftSection ul {
+    display: flex;
+    gap: 20px;
+}
+
+.socialIconsDiv {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+.rightSection {
+    display: flex;
+    gap: 14px;
+}
+
+.footerEnd p {
+    font-size: 14px;
+}
+.socialIconsDiv:hover{
+    cursor: pointer;
+}
