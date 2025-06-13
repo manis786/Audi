@@ -70,12 +70,13 @@
 
 .ContentDiv {
     color: white;
-    position: absolute;
-    bottom: 50px;
+    bottom: 100px;
     left: 40px;
     display: flex;
     flex-direction: column;
     gap: 18px;
+    position: absolute;
+    bottom: 30px;
 }
 
 .ContentDiv h2 {
@@ -124,10 +125,12 @@
     width: 420px;
 
 }
+.ContentDiv {
 
+}
 .cardHeading h3 {
     font-family: "AudiType", sans-serif;
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 400;
 
 }
@@ -217,6 +220,7 @@
     cursor: pointer;
     transition: all .8s;
 }
+
 .contentBtn2 {
     background-color: black;
     color: white;
@@ -224,14 +228,17 @@
     font-size: 14px;
     width: fit-content;
 }
+
 .contentBtn2:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
+
 .Content2Div {
     display: flex;
     justify-content: center;
 }
-.Footer{
+
+.Footer {
     padding: 80px 60px;
     margin-top: 60px;
     background-color: black;
@@ -252,6 +259,7 @@
 .anchorDiv a {
     color: white;
 }
+
 .BackTopDiv {
     display: flex;
     justify-content: end;
@@ -287,8 +295,9 @@
 .listItemDiv li {
     padding: 16px 0;
 }
-.listItemDiv li:hover{
-cursor: pointer;
+
+.listItemDiv li:hover {
+    cursor: pointer;
 }
 
 .copyrightSection {
@@ -317,6 +326,216 @@ cursor: pointer;
 .footerEnd p {
     font-size: 14px;
 }
-.socialIconsDiv:hover{
+
+.socialIconsDiv:hover {
     cursor: pointer;
+}
+/* ------------------------- */
+/* 💻 Tablet (<=1024px)     */
+/* ------------------------- */
+@media (max-width: 1024px) {
+    .NavDiv {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .Navlist ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .HeroSection {
+        min-height: 600px;
+    }
+
+    .CardsMain {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .InfoSection {
+        flex-direction: column;
+        padding: 40px;
+        align-items: center;
+    }
+
+    .LeftContent {
+        padding: 0;
+        text-align: center;
+    }
+
+    .listItemDiv {
+        flex-direction: column;
+        gap: 40px;
+        padding-left: 20px;
+    }
+
+    .copyrightSection {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+/* ------------------------- */
+/* 📱 Mobile (<=600px)      */
+/* ------------------------- */
+@media (max-width: 600px) {
+    .NavDiv {
+        padding: 10px;
+    }
+
+    .Imgdiv img {
+        width: 50px;
+    }
+
+    .Navlist ul {
+        gap: 10px;
+        padding: 0;
+    }
+
+    .ContentDiv {
+        left: 20px;
+        bottom: 20px;
+        gap: 12px;
+    }
+
+    .ContentDiv h2 {
+        font-size: 18pt;
+    }
+
+    .ContentDiv p {
+        font-size: 14pt;
+    }
+
+    .ContentDiv button {
+        font-size: 8pt;
+        padding: 6px 10px;
+    }
+
+    .CardsMain {
+        grid-template-columns: 1fr;
+    }
+
+    .CardImg img {
+        width: 100%;
+        height: auto;
+    }
+
+    .CardSection,
+    .InfoSection,
+    .Footer {
+        padding: 40px 20px;
+    }
+
+    .LeftContent h3 {
+        font-size: 24px;
+    }
+
+    .btnDiv button,
+    .contentBtn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .contentBtn2 {
+        font-size: 12px;
+        padding: 10px 40px;
+    }
+
+    .socialIconsDiv {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .BackTopDiv {
+        justify-content: center;
+    }
+
+    .listItemDiv {
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .listItemDiv h3 {
+        font-size: 18px;
+    }
+
+    .footerEnd p {
+        text-align: center;
+    }
+}
+
+/* ----------------------------------- */
+/* 📱 Extra Small Screens (<=400px)   */
+/* ----------------------------------- */
+@media (max-width: 400px) {
+    .NavDiv {
+        padding: 8px;
+        gap: 10px;
+    }
+
+    .Imgdiv img {
+        width: 40px;
+    }
+
+    .Navlist ul {
+        gap: 5px;
+        font-size: 12px;
+    }
+
+    .ContentDiv h2 {
+        font-size: 16pt;
+    }
+
+    .ContentDiv p {
+        font-size: 12pt;
+    }
+
+    .ContentDiv button {
+        font-size: 7pt;
+        padding: 4px 8px;
+    }
+
+    .CardImg img {
+        height: auto;
+    }
+
+    .LeftContent h3 {
+        font-size: 20px;
+    }
+
+    .btnDiv button,
+    .contentBtn,
+    .contentBtn2 {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .socialIconsDiv {
+        gap: 10px;
+    }
+
+    .cardHeading h3 {
+        font-size: 18px;
+    }
+
+    .cardPara p {
+        font-size: 14px;
+    }
+
+    .listItemDiv {
+        gap: 20px;
+    }
+
+    .listItemDiv h3 {
+        font-size: 16px;
+    }
+
+    .footerEnd p {
+        font-size: 12px;
+    }
 }
